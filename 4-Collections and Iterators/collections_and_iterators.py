@@ -36,7 +36,7 @@ class SinglyLinkedList(object):
             raise IndexError()
         else:
             cur = self.head
-            for x in xrange(index):
+            for x in range(index):
                 cur = cur.next
             return cur.data
 
@@ -45,7 +45,7 @@ class SinglyLinkedList(object):
             raise IndexError()
         else:
             cur = self.head
-            for x in xrange(index):
+            for x in range(index):
                 cur = cur.next
             cur.data = value
 
@@ -148,7 +148,7 @@ class DoublyLinkedList(SinglyLinkedList):
             # It's between two nodes
             else:
                 a = self.head
-                for x in xrange(index - 1):
+                for x in range(index - 1):
                     a = a.next
                 #  _____    _____
                 # |  A  |->|  B  |
@@ -183,7 +183,7 @@ if __name__ == '__main__':
     test.append(3)
     test.append(4)
 
-    print test[0]
-    print test[1]
-    print test[2]
-    print test[-1]
+    print(test[0])
+    print(test[1])
+    print(test[2])
+    print(test[-1])

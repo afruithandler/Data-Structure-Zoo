@@ -10,7 +10,7 @@ class TestAlgorithms(unittest.TestCase):
         self.list_a = [12,43,60,32,10]
         self.list_b = [43,60,32,10,12]
         self.list_c = [10,12,9,7,40,6]
-        self.big_sorted = list(xrange(1000))
+        self.big_sorted = list(range(1000))
 
     def test_array_equals(self):
         test = algorithms.array_equals(self.list_a, self.list_b)

@@ -17,21 +17,21 @@ class TestStack(unittest.TestCase):
 
         test_value = 22
         test_stack.push(test_value)
-        self.assertEquals(test_value, test_stack.peek())
+        self.assertEqual(test_value, test_stack.peek())
 
     def test_pop(self):
         test_stack = stack.Stack()
         test_value = 42
         test_stack.push(test_value)
 
-        self.assertEquals(test_value, test_stack.pop())
+        self.assertEqual(test_value, test_stack.pop())
 
     def test_peek(self):
         test_stack = stack.Stack()
 
         test_value = 22
         test_stack.push(test_value)
-        self.assertEquals(test_value, test_stack.peek())
+        self.assertEqual(test_value, test_stack.peek())
 
     def test_size(self):
         test_stack = stack.Stack()
@@ -40,7 +40,7 @@ class TestStack(unittest.TestCase):
         test_stack.push('This is fun!')
         test_stack.push('Wow! I love reading UnitTests!')
 
-        self.assertEquals(3, test_stack.size)
+        self.assertEqual(3, test_stack.size)
 
 class TestApplications(unittest.TestCase):
     def setUp(self):
@@ -80,7 +80,7 @@ class TestApplications(unittest.TestCase):
         too_many_operands = "2 3 + 4 6 -"
         too_many_operators = "2 3 + -"
 
-        self.assertEquals(88, stack.postfix_eval(eighty_eight))
+        self.assertEqual(88, stack.postfix_eval(eighty_eight))
         with self.assertRaises(ValueError): 
             stack.postfix_eval(too_many_operands)
 

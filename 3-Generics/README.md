@@ -13,17 +13,17 @@ of strings. However, in Python you can! Consider the following:
     b = 'thomas'
 
     if a == b:
-        print 'They're equal'
+        print('They're equal'
     if a < b:
-        print 'foo!'
+        print('foo!'
     if a > b:
-        print 'bar!'
+        print('bar!'
 ```
 
 What do you think will be printed to the console? Obviously 'They're equal' won't
 be printed. But what about the next two? It's uncertain, maybe they're compared
 by length or lexicographically. If you tried it yourself you'll see that it would
-print 'foo!' because the Natural Ordering of those strings puts the string 'hello'
+print('foo!' because the Natural Ordering of those strings puts the string 'hello'
 before 'thomas'. Natural Ordering is very important in sorting and other algorithms,
 integers are simple enough but what about comparing complex objects?
 
@@ -48,7 +48,9 @@ that. Let's try it out with some code from a previous section!
 
 ```python
     #See also generics.py
-    fruit_basket = [ Fruit(random.randint(0,30), 4) for x in xrange(30)]
+    fruit_basket=[]
+    for x in range(30):
+        fruit_basket.append(Fruit(random.randint(0,30), 4))
 
     quick_sort(fruit_basket, 0, len(fruit_basket)-1)
 ```

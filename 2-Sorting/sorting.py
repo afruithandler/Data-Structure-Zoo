@@ -7,9 +7,9 @@ def selection_sort(arr):
     """ Selection Sort
         Complexity: O(n^2)
     """
-    for i in xrange(len(arr)):
+    for i in range(len(arr)):
         minimum = i
-        for j in xrange(i+1, len(arr)):
+        for j in range(i+1, len(arr)):
             # "Select" the correct value
             if arr[j] < arr[minimum]:
                 minimum = j
@@ -21,7 +21,7 @@ def insertion_sort(arr):
     """ Insertion Sort
         Complexity: O(n^2)
     """
-    for i in xrange(len(arr)):
+    for i in range(len(arr)):
         cursor = arr[i]
         pos = i
         while pos > 0 and arr[pos-1] > cursor:
@@ -37,7 +37,8 @@ def merge_sort(arr):
         Complexity: O(n log(n))
     """
     size = len(arr)
-    half = size/2
+    half = round(size/2)
+
     # Our recursive base case
     if size <= 1:
         return arr
@@ -80,7 +81,7 @@ def quick_sort(arr, first, last):
 
 def partition(arr, first, last):
     pivot = first
-    for pos in xrange(first, last):
+    for pos in range(first, last):
         if arr[pos] < arr[last]:
             arr[pos], arr[pivot] = arr[pivot], arr[pos]
             pivot += 1

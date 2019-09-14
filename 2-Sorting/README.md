@@ -13,6 +13,7 @@ pictures, among other things.
 ### Simple sorts
 Starting out with the most basic types of sorting methods, we have Selection and Insertion
 sorts. Two algorithms which I most often confuse because they're so similar!
+
 Selection sort essentially starts at the beginning and searches the rest of the
 list for the smallest number then "selects" it. After it finds what it's looking for
 it moves to the next number, essentially making a bubble of sorted numbers, cool right?

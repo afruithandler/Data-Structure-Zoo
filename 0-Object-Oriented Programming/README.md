@@ -48,10 +48,10 @@ we mentioned earlier.
 >>> car = objects.Car('Ford')
 >>> car2 = objects.Car('Lambolinguini')
 >>> car.name = Tesla
->>> print car.name
+>>> print(car.name)
 Tesla
 
->>> print car.number_of_wheels
+>>> print(car.number_of_wheels)
 4
 ```
 

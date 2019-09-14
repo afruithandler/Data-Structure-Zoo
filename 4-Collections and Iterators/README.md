@@ -17,7 +17,7 @@ this for you.
 
 ### Singly-Linked Lists
 Hopping right into the slightly more difficult stuff, Singly-linked lists (not to be confused with ``list()``)are a different
-way to thing about organizing data. Think about a simple toy train with wheeled boxes
+way to think about organizing data. Think about a simple toy train with wheeled boxes
 and string tying them together. Each box can hold something different and the string gives
 a distinct Natural Order to the train. Below is a more diagram like way of describing it.
 
@@ -56,7 +56,7 @@ called and jumping to the next element using the next variable. Like below:
 One more thing to add, Iterators go hand in hand with the ``__contains__()`` method. This one
 simply takes an item argument and returns whether the data structure has that item within it. We 
 can use our ``while cur.next is not None:`` pattern to search through our list to see if we can find
-out value.
+our value.
 
 Now before we move on to Doubly-linked lists, I hope you haven't forgotten your Big-O notation!
 The reason we would use a linked-list over a normal list comes down to average running time.

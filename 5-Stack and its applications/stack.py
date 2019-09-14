@@ -84,7 +84,7 @@ def postfix_eval(string):
 
         and then doing:
 
-        print add(4,5)
+        print(add(4,5))
         >>> 9
 
         The add function can also be accessed via the ``operator``
@@ -115,7 +115,7 @@ def postfix_eval(string):
                 stack.push(result)
 
             # If there aren't enough operands, raise it.
-            except ValueError, e:
+            except ValueError as e :
                 raise e
         else:
             # Else it's either a number or garbage
@@ -124,7 +124,7 @@ def postfix_eval(string):
                 value = int(character)
                 stack.push(value)
 
-            except ValueError, e:
+            except ValueError as e:
                 raise e
 
     # If we have too many operands or operators

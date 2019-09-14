@@ -61,25 +61,25 @@ def array_equals(a, b):
 # Below are some speed tests comparing sequential to binary search
 if __name__ == '__main__':
 
-    print 'Given an array of a million ordered ints...'
-    big_o_list = list(xrange(1000000))
+    print('Given an array of a million ordered ints...')
+    big_o_list = list(range(1000000))
 
     item = random.randint(0, 1000000)
-    print 'Finding',item,'using sequential search'
+    print('Finding',item,'using sequential search')
 
     t0 = time.time()
     find_sequentially(big_o_list, item)
     t1 = time.time()
     total = t1-t0
 
-    print 'Found',item,'in',total,'MS'
+    print('Found',item,'in',total,'MS')
 
     item = random.randint(0, 1000000)
-    print 'Finding',item,'using binary search'
+    print('Finding',item,'using binary search')
 
     t2 = time.time()
     binary_search(big_o_list, item)
     t3 = time.time()
     total = t3-t2
 
-    print 'Found',item,'in',total,'MS'
+    print('Found',item,'in',total,'MS')
