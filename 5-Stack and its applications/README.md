@@ -119,7 +119,7 @@ check to see if it's in the keys first, if so we push it.
 Don't worry if it looks intimidating! If it's a closing parenthesis, we check to see 
 that it has a matching pair on the ``Stack`` by calling ``pop()`` and using our neat
 lookup dictionary to see if it matches. That's essentially the algorithm. You'll see at
-the end of the method that we have a check to see that the stack is empty. This ensures
+the end of the method that we have a check to see that  the stack is empty. This ensures
 that we don't have any lonely parenthesis left with no partner. 
 
 Moving on to another fun application: postfix evaluation. You're familiar with infix notation
@@ -148,13 +148,13 @@ def postfix_eval(string):
                 left = stack.pop()
                 result = ops[character](left, right)
                 stack.push(result)
-            except ValueError, e:
+            except ValueError e:
                 raise e
         else:
             try:
                 value = int(character)
                 stack.push(value)
-            except ValueError, e:
+            except ValueError e:
                 raise e
     if stack.size > 1:
         raise ValueError()

@@ -3,6 +3,7 @@
 	For testing the Queue class
 
 	thomas moll 2015
+    Austin Fruithandler
 '''
 import unittest, queue
 

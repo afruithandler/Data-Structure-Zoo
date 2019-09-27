@@ -54,3 +54,9 @@ class QueueNode(object):
 	def __init__(self, item):
 		self.data = item
 		self.next = None
+
+q= Queue()
+q.enqueue(4)
+q.enqueue('dog')
+q.enqueue(True)
+print(q.size())

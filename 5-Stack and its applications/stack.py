@@ -1,7 +1,8 @@
 """ Stack
 
     thomas moll 2015
-"""
+    Austin Fruithandler 2019
+""" 
 
 class Stack(object):
     def __init__(self):
